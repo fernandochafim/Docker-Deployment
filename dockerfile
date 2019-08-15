@@ -1,4 +1,4 @@
-# building docker image to use R-Studio in a browser
+# Building docker image to use R-Studio in a browser
 
 FROM rocker/verse:latest
 

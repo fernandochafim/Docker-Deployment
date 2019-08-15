@@ -30,3 +30,38 @@ me/rstudio/kitematic fernandovcb/docker-r-studio`
 
 `docker save fernandovcb/docker-r-studio > docker-r-studio.tar`
 
+### Load from local file
+
+`docker load --input docker-r-studio.tar`
+
+### Load from Docker Hub
+
+`docker pull fernandovcb/docker-r-studio`
+
+### Check if Docker is running from another terminal
+
+`docker ps` #copy the ID
+
+`docker exec -it CONTAINERID bash`
+
+Now you are in the Bash. To leave only execute `exit`
+
+### Save Image
+
+After make some changes (install something)
+
+`docker ps` #copy the ID
+
+`docker commit -m "added gapminder" 25cbcc1bcc8a fernandovcb/docker-r-studio`
+
+### Push Changes to Docker Hub
+
+`docker push fernandovcb/docker-r-studio`
+
+Save with tags (different versions): 
+
+`docker tag fernandovcb/docker-r-studio fernandovcb/docker-r-studio:version0.9`
+
+`docker images`
+
+`docker push fernandovcb/docker-r-studio:version0.9`

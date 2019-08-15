@@ -26,3 +26,7 @@ me/rstudio/kitematic fernandovcb/docker-r-studio`
 
 `docker push fernandovcb/docker-r-studio`
 
+### Save locally
+
+`docker save fernandovcb/docker-r-studio > docker-r-studio.tar`
+

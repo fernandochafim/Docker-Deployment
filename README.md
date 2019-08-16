@@ -65,3 +65,9 @@ Save with tags (different versions):
 `docker images`
 
 `docker push fernandovcb/docker-r-studio:version0.9`
+
+### Delete locally
+
+`docker images`
+
+`docker rmi --force [IMAGE ID]`

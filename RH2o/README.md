@@ -9,12 +9,14 @@ To allow usage of R-Studio in a portable way using Docker Container
 #### Build Container
 
 `docker login` - to authenticate
-`docker build -t fernandovcb/docker-r-studio .` - to run
+`docker build -t fernandovcb/RStudio .` - to run
 
 ### Run Container
 
-`docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v //C:/Users/ferna/Desktop/trashc:/rstudioshared://ho
-me/rstudio/kitematic fernandovcb/docker-r-studio`
+`docker run --rm -p 8787:8787 -e USER=myself -e PASSWORD=guest -v //C:/Users/ferna/Desktop/trashc:/rstudioshared://home/rstudio/kitematic fernandovcb/docker-r-studio`
+
+# Run with Rmarkdown output
+`docker run -it --rm -v 8787:8787 -e USER=myself -e PASSWORD=guest -v //C:/Users/ferna/Desktop/trashc:/rstudioshared://home/rstudio/kitematic fernandovcb/docker-r-studio`
 
 ### Stop Container
 

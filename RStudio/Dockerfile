@@ -10,7 +10,7 @@ RUN mkdir -p /02_code
 RUN mkdir -p /03_output
 
 ## copy files
-COPY 02_code/install_packages.R /install_packages.R
+COPY Code/02_code/install_packages.R /install_packages.R
 
 ## install packages 
 RUN Rscript /install_packages.R
